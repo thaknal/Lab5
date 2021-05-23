@@ -31,7 +31,7 @@ public class Pong1 extends Application {
         Canvas canvas = new Canvas(WIDTH, HEIGHT);
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
-        Timeline t = new Timeline(new KeyFrame(Duration.millis(100), e -> run(gc)));
+        Timeline t = new Timeline(new KeyFrame(Duration.millis(40), e -> run(gc)));
         t.setCycleCount(Timeline.INDEFINITE);
 
         stage.setTitle("Kulki!");
@@ -55,6 +55,8 @@ public class Pong1 extends Application {
 
         if ((x <= ARENAX1)   || ((x >= ARENAX2))) vx = -vx;
         if ((y <= ARENAY1)   || ((y >= ARENAY2))) vy = -vy;
+        if ((x <= ARENAX1)   || ((x>=ARENAX2 - 20))) vx = -vx;
+        if ((y <= ARENAY1)   || ((y>=ARENAY2 - 20))) vy = -vy;
 
         x += vx;
         y += vy;
