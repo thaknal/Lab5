@@ -3,7 +3,7 @@ package pl.lublin.wsei.java.cwiczenia.lab5;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.transform.Affine;
 import javafx.scene.transform.Rotate;
-import javafx.scene.transform.Rotate;
+
 public class Rugby extends Kulka{
 
     private double rx;
@@ -49,7 +49,7 @@ public class Rugby extends Kulka{
             rot = Math.sin(rot) * ry + yPos - ry;
             ySpeed = -ySpeed;
         }
-        if (yPos + ry >= yBottom) {
+        if (yPos + ry >= yBottom){
             rot = Math.sin(rot) * ry + yPos + ry;
             ySpeed = -ySpeed;
         }
