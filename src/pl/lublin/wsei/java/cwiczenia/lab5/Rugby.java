@@ -49,7 +49,7 @@ public class Rugby extends Kulka{
             rot = Math.sin(rot) * ry + yPos - ry;
             ySpeed = -ySpeed;
         }
-        if (yPos + ry >= yBottom){
+        if (yPos + ry >= yBottom) {
             rot = Math.sin(rot) * ry + yPos + ry;
             ySpeed = -ySpeed;
         }
